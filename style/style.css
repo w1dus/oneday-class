@@ -2,7 +2,7 @@
 
 /* 색 설정 */
 :root {
-    --main-color: #CF2E41;
+    --main-color: rgba(79, 70, 205, 1);
     --black-color : #222;
     --white-color : #fff
 }
@@ -51,5 +51,59 @@ p{ word-break: keep-all; }
 @media screen and (max-width: 650px) { 
     .paging_box{ font-size: 13px; }
 } /* mobile */
+
+.mainSec{ word-break: keep-all; font-family: 'Paperlogy'; min-height: 100vh; padding: 40px 0; background-color: rgba(69, 103, 177, 0.1); }
+.mainSec .title1{ text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25); text-align: center; font-size: 46px; color: #4567B1; }
+.mainSec .title1 b{ font-weight: 500; }
+.mainSec .title2 { text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);  text-align: center; margin-top: 13px; font-size: 62px; font-weight: 700; color: #4567B1; }
+.mainSec .content1{ text-align: center; margin-top: 12px; font-size: 24px ; font-weight: 700; }
+.mainSec .halfBox{ display: flex; gap: 20px; }
+.mainSec .halfBox .contentBox{ margin-top: 30px; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; align-items: center; width: calc(100% / 2); background-color: #fff; box-shadow: 4px 9px 14px 0px rgba(0, 0, 0, 0.15); }
+.mainSec .halfBox .contentBox:nth-child(1){ justify-content: center; background-color: rgba(255,255,255,.6); }
+.mainSec .halfBox .contentBox .book{  }
+.mainSec .halfBox .contentBox .dotList{ margin-top: 20px; font-size: 1.5em;  }
+.mainSec .halfBox .contentBox .dotList > p + p{ margin-top: 10px; }
+.mainSec .halfBox .contentBox .dotList > p{ position: relative; padding-left: 25px; }
+.mainSec .halfBox .contentBox .dotList > p::before{ content: '◆'; position: absolute; left: 0; top: 0; }
+.mainSec .halfBox .t1{ font-size: 34px; font-weight: 700; color: #4567B1; }
+.mainSec .halfBox .itemList{ margin-top: 10px; width: 100%; color: #4567B1; }
+.mainSec .halfBox .itemList > li + li{ margin-top: 5px; }
+.mainSec .halfBox .itemList .item{ gap: 15px; font-size: 24px; padding: 8px 56px; display: flex; align-items: center; gap: 5px; border-radius: 4px; border: 2px solid #4567B1; }
+.mainSec .halfBox .itemList .item .number{ flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; color: fff; font-size: 18px; color: #fff; background-color: #4567B1; display: flex; align-items: center; justify-content: center; }
+.mainSec .halfBox .t2{ margin-top: 23px; font-size: 34px; font-weight: 700; }
+.mainSec .halfBox .t2 b{ color: #4567B1; }
+.mainSec .halfBox .formList{ max-width: 455px; width: 100%; margin: 0 auto; margin-top: 20px; }
+.mainSec .halfBox .agreeCheckDiv{ max-width: 455px; width: 100%; }
+.mainSec .halfBox .submitBtn{ margin: 20px auto 0 auto; width: 100%; max-width: 220px; background: linear-gradient(90deg, rgba(49, 126, 255, 0.00) 0%, #317EFF 100%), #4F46CD; border: none; color: #fff; padding: 20px; width: 100% ; max-width: 323px; border-radius: 30px; font-family: "Pretendard"; font-weight: 700;  }
+@media screen and (max-width: 1250px) { 
+    .mainSec .title1{ font-size: 30px; }
+    .mainSec .title2{ font-size: 40px; }
+    .mainSec .content1{ font-size: 18px; }
+    .mainSec .halfBox .contentBox .book{ width: 200px; }
+    .mainSec .halfBox .contentBox .dotList > p{ font-size: 18px; padding-left: 16px; }
+    .mainSec .halfBox .t1{ font-size: 24px; }
+    .mainSec .halfBox .itemList .item{ justify-content: center; padding: 10px; font-size: 18px; }
+    .mainSec .halfBox .t2{ font-size: 24px; }
+    .mainSec .halfBox .submitBtn{ padding: 15px; }
+}
+@media screen and (max-width: 950px) { 
+    .mainSec .halfBox{ gap: 10px; flex-direction: column; } 
+    .mainSec .halfBox .contentBox { width: 100%; }
+    .mainSec .halfBox .itemList{ max-width: 455px; }
+}
+@media screen and (max-width: 650px) { 
+    .mainSec .title1{ font-size: 20px; }
+    .mainSec .title2{ font-size: 30px; }
+    .mainSec .content1{ font-size: 16px; }
+    .mainSec .halfBox .contentBox .dotList > p{ font-size: 16px; }
+    .mainSec .halfBox .contentBox .book{ max-width: 100%; }
+    .mainSec .halfBox .t1{ font-size: 20px; }
+    .mainSec .halfBox .itemList .item{ font-size: 16px; }
+    .mainSec .halfBox .itemList .item .number{ font-size: 14px; width: 20px; height: 20px; }
+    .mainSec .halfBox .t2{ font-size: 20px; }
+    .mainSec .halfBox .submitBtn{ max-width: 100%; }
+}
+
+
 
 
